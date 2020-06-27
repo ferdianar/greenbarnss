@@ -1,0 +1,6 @@
+.tricolumn {
+    column-count: 3;
+    -moz-column-count : 3;
+    column-rule: 3px dashed blue;
+    column-gap: 3em;
+}

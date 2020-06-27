@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenbarn - Belanja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="../stylesheets/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/belanja.css">
+    <link rel="icon" href="images/leaf.png">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+</head>
+<body>
+    <div id="layout">
+        <h3 data-aos="fade-right" class="brand"> <i class="fa fa-paw"></i> &nbsp; Greenbarn &trade;</h3>
+        <div data-aos="fade-left" class="searchengines">
+        <form action="">
+            <input type="search" name="search" id="" placeholder="Kamu mau cari apa ?">
+            <button class="search">Search</button>
+        </form>
+        </div>
+        <p data-aos="fade-down" class="title">Keranjang Belanja</p>
+        <p data-aos="fade-up" class="subtitle">Kamu sekarang berada di halaman keranjang</p>
+        <div id="banner"></div>
+        <div id="container">
+                <div id="menu">
+                    <a href="home.html"> <i class="fa fa-home"></i>&nbsp; Home</a>
+                    <a href="produk.html"> <i class="fa fa-cubes"></i>&nbsp; Produk</a>
+                    <a href="galeri.html"> <i class="fa fa-photo"></i>&nbsp; Galeri</a>
+                    <a href=""> <i class="fa fa-shopping-basket"></i>&nbsp; Belanja</a>
+                    <a href="tentang.html"> <i class="fa fa-user"></i>&nbsp; Tentang</a>
+                </div>
+            <div id="content"> 
+                <div class="bracket">
+                    <div data-aos="fade-right" class="product">
+                        <div class="picture"></div>
+                        <div class="desc">
+                            <h2>Broccoli</h2>
+                            <p>IDR 10.300 &times; 3</p>
+                            <p class="kata">Broccoli adalah sayuran hijau</p>
+                            <p class="address">Tambahkan alamat</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" class="product2">
+                        <div class="picture"></div>
+                        <div class="desc">
+                            <h2>Daun Selada</h2>
+                            <p>IDR 12.500 &times; 2</p>
+                            <p class="kata">Selada adalah sayuran hijau</p>
+                            <p class="address">Tambahkan alamat</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="product3">
+                        <div class="picture"></div>
+                        <div class="desc">
+                            <h2>Kubis</h2>
+                            <p>IDR 8.800 &times; 4</p>
+                            <p class="kata">Kubis adalah sayuran hijau</p>
+                            <p class="address">Tambahkan alamat</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="checkout">
+                    <h3>Checkout</h3>
+                    <hr>
+                    <div class="price">
+                    <p>Total harga</p>
+                    <p class="prices"> IDR 91.900</p>
+                </div>
+                <button class="checkoutbutton">Beli sekarang</button>
+                </div>
+            </div>
+        </div>
+        <div id="bawah">
+            <p> &copy;2020 FERDIAN AHMAD ROZIKIN. </p>
+        </div>
+    </div>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 2200
+        });
+    </script>
+</body>
+</html>

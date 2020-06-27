@@ -1,0 +1,285 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+#layout {
+    width: 100%;
+    margin: 0 auto;
+}
+#banner {
+    height: 300px;
+    background-color: teal;
+}
+#bawah {
+    height: 40px;
+    background-color: yellowgreen;
+}
+#content {
+    width: 90%;
+    padding: 30px;
+    background-color: whitesmoke;
+    margin: auto;
+}
+#content p {
+    line-height: 1.875;
+}
+#menu {
+    width: 100%;
+    background-color: rgb(52, 175, 41);
+    display: flex;
+    height: 70px;
+}
+#menu a {
+    width: 20%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: .4s ease-out;
+}
+#menu a:hover {
+    background-color: yellow;
+    color: #000000;
+}
+#banner {
+    background-image: url('../images/brokoli-hijau.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.title {
+    color: #FFF;
+    position: absolute;
+    z-index: 22;
+    font-size: 32px;
+    font-weight: bold;
+    top: 14%;
+    left: 40%;
+}
+.subtitle {
+    color: #FFF;
+    position: absolute;
+    z-index: 22;
+    font-size: 18px;
+    font-weight: 600;
+    top: 26%;
+    left: 37%;
+    text-align: justify;
+}
+
+.brand {
+    position: absolute;
+    z-index: 22;
+    top: 2%;
+    left: 3%;
+    font-size: 22px;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: .4s ease-out;
+}
+.searchengines {
+    position: absolute;
+    z-index: 22;
+    top: 5%;
+    right: 3%;
+}
+input {
+    width: 220px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+input:focus {
+    border: 3px solid rgb(142, 143, 255);
+    padding: 9px 13px;
+    border-radius: 4px;
+}
+::placeholder {
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+    font-family: 'Poppins', sans-serif;
+}
+.search {
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(99, 99, 255);
+    color: #FFF;
+}
+.search:hover {
+    background-color: rgb(66, 66, 231);
+    cursor: pointer;
+}
+
+#bawah {
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(52, 175, 41);
+}
+
+#bawah p {
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+}
+
+@keyframes animate {
+    25% {
+        background-image: url('../images/cabai.jpg');
+    }
+    50% {
+        background-image: url('../images/blackpepper.jpg');
+    }
+    75% {
+        background-image: url('../images/kubis.jpg');
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .title {
+        top: 17%;
+        left: 18%;
+    }
+    .subtitle {
+        top: 28%;
+        left: 8%;
+    }
+    #menu a {
+        font-size: 12px;
+    }
+    .brand {
+        z-index: 38;
+        top: -4%;
+        left: 0%;
+        width: 91%;
+        background-color: rgb(52, 175, 41);
+        padding: 10px 20px;
+        position: fixed;
+    }
+    #content p {
+        text-align: justify;
+    }
+    .searchengines {
+        top: 46%;
+        right: 13%;
+    }
+    #banner {
+        height: 400px;
+    }
+    #container {
+        overflow: hidden;
+    }
+}
+
+/* Grid area's */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    grid-gap: 30px
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    height: 220px;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    transition: .4s ease-out;
+    -webkit-transition: .4s ease-out;
+    -moz-transition: .4s ease-out;
+    -ms-transition: .4s ease-out;
+    -o-transition: .4s ease-out;
+}
+
+.grid-item:first-child {
+    background-image: url('../images/blackpepper.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(2) {
+    background-image: url('../images/brokoli-hijau.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(3) {
+    background-image: url('../images/cabai.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(4) {
+    background-image: url('../images/daunselada.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(5) {
+    background-image: url('../images/kubis.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(6) {
+    background-image: url('../images/eggplant.jpg');
+    object-fit: cover;
+    background-position: right;
+}
+.grid-item:nth-child(7) {
+    background-image: url('../images/lidahbuaya.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(8) {
+    background-image: url('../images/paprika.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(9) {
+    background-image: url('../images/cabai.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:nth-child(10) {
+    background-image: url('../images/daunselada.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+.grid-item:last-child {
+    background-image: url('../images/brokoli-hijau.jpg');
+    object-fit: cover;
+    background-position: center;
+}
+
+.grid-item:nth-child(4) {
+    grid-column: 1 / span 2;
+}
+.grid-item:nth-child(10) {
+    grid-column: 2 / span 2;
+}
+
+.grid-item:hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        left: 22%;
+    }
+}

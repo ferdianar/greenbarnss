@@ -1,0 +1,7 @@
+#source {
+    flow-into: main;
+}
+.region {
+    flow-from: main;
+    background: #9ACD32;
+}
